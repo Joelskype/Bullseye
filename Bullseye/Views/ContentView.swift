@@ -8,6 +8,8 @@
 import SwiftUI
 
 
+
+
 struct ContentView: View {
     
     @State private var alertIsVisible = false
@@ -52,6 +54,7 @@ struct InstructionView: View {
 }
 
 
+
 struct SliderView: View {
     
     @Binding var sliderValue: Double
@@ -61,7 +64,9 @@ struct SliderView: View {
         HStack {
             SliderLabelText(text: "1")
             Slider(value: $sliderValue, in: 1.0...100.0)
+            
                 .accessibilityIdentifier(Accessibility.Elements.Slider.view)
+
             SliderLabelText(text: "100")
         }
         .padding()
@@ -93,8 +98,10 @@ struct HitMeButton: View {
                 .foregroundColor(Color("TextColor"))
             
         }
+
         .padding(20.0)
         .accessibilityIdentifier(Accessibility.Elements.Buttons.hitMeButton)
+
         .background(
             ZStack {
                 

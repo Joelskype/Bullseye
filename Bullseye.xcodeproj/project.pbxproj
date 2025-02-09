@@ -30,12 +30,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2EA4D6602D47D8AF0094DDE3 /* Exceptions for "BullseyeTests" folder in "Bullseye" target */ = {
+		2EA6F8EC2D588A36008E5115 /* Exceptions for "BullseyeTests" folder in "Bullseye" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Accessibility.swift,
 			);
 			target = 2E2257CD2D2FF989009611CE /* Bullseye */;
+		};
+		2EA6F8ED2D588A36008E5115 /* Exceptions for "BullseyeTests" folder in "BullseyeUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Accessibility.swift,
+				Pages/AlertViewPage.swift,
+				Pages/ContentViewPage.swift,
+			);
+			target = 2E2257E72D2FF98A009611CE /* BullseyeUITests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -43,7 +52,8 @@
 		2E2257E12D2FF98A009611CE /* BullseyeTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2EA4D6602D47D8AF0094DDE3 /* Exceptions for "BullseyeTests" folder in "Bullseye" target */,
+				2EA6F8EC2D588A36008E5115 /* Exceptions for "BullseyeTests" folder in "Bullseye" target */,
+				2EA6F8ED2D588A36008E5115 /* Exceptions for "BullseyeTests" folder in "BullseyeUITests" target */,
 			);
 			path = BullseyeTests;
 			sourceTree = "<group>";
@@ -168,7 +178,6 @@
 				2E2257EA2D2FF98A009611CE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				2E2257E12D2FF98A009611CE /* BullseyeTests */,
 				2E2257EB2D2FF98A009611CE /* BullseyeUITests */,
 				2EA593262D32AF8F0012E8C2 /* Bullseye */,
 			);
