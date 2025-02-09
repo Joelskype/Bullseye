@@ -48,7 +48,7 @@ final class AlertViewPageObject {
     //Actions
     
     func checkAlertElements() {
-        
+    
         hitMeButton.tap()
         
         let alert = alert
@@ -69,5 +69,13 @@ final class AlertViewPageObject {
         let newRoundButton = newRoundButton
         XCTAssertTrue(newRoundButton.exists)
         XCTAssertEqual(newRoundButton.label, "Start New Round")
+    }
+    
+    func checkBNTNotEqualPrevious() {
+        
+    }
+    
+    func checkPushNewRoundButtom() {
+        
     }
 }
