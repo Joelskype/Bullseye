@@ -24,6 +24,7 @@ struct PointsView: View {
                 .accessibilityIdentifier(Accessibility.Elements.TextViews.bigNumberText)
             BodyText(text: "You scored \(points) points\n🎉🎉🎉")
                 .accessibilityIdentifier(Accessibility.Elements.TextViews.bodyText)
+                .accessibilityValue("\(points)")
             Button(action: {
                 withAnimation{
                     alertIsVisible = false

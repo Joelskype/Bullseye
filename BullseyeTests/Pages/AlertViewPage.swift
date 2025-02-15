@@ -60,22 +60,40 @@ final class AlertViewPageObject {
         
         let bigNumberText = bigNumberText
         XCTAssertTrue(bigNumberText.exists)
-//        XCTAssertEqual(bigNumberText.label, text)
         
         _ = bodyText
         XCTAssertTrue(bigNumberText.exists)
-//        XCTAssertEqual(bodyText.label, )
         
         let newRoundButton = newRoundButton
         XCTAssertTrue(newRoundButton.exists)
         XCTAssertEqual(newRoundButton.label, "Start New Round")
     }
-    
-    func checkBNTNotEqualPrevious() {
         
-    }
-    
-    func checkPushNewRoundButtom() {
+    func checkNewRoundButton() {
+       
+        //accessibilityidentifier
         
+        hitMeButton.tap()
+        newRoundButton.tap()
+        
+        // NSpredicate
+        
+//        let predicateHitMe = NSPredicate(format: "label == 'HIT ME'")
+//        let predicateNewRound = NSPredicate(format: "label == 'Start New Round'")
+//        let hitMeButton = app.buttons.element(matching: predicateHitMe)
+//        let newRoundButton = app.buttons.element(matching: predicateNewRound)
+//        hitMeButton.tap()
+//        newRoundButton.tap()
+//        XCTAssertFalse(alert.exists)
+        
+        // index
+        
+//        let hitMeButton = app.buttons.element(boundBy: 2)
+//        let startNewRoundButton = app.buttons.element(boundBy: 2)
+//        
+//        hitMeButton.tap()
+//        startNewRoundButton.tap()
+//        
+        XCTAssertFalse(alert.exists)
     }
 }

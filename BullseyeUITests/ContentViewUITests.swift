@@ -17,4 +17,20 @@ final class ContentViewUITests: XCTestCase {
         contentViewPage
             .tapHitMeButton()
     }
+    
+    func testSliderMove() {
+        contentViewPage
+            .changeSliderPosition()
+    }
+    
+    func testCheckButtons() {
+        
+        let buttons = app.buttons.allElementsBoundByIndex
+
+        for (index, button) in buttons.enumerated() {
+            print("Button \(index): \(button.label)")
+        }
+        
+    }
+    
 }

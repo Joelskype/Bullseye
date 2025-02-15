@@ -33,6 +33,11 @@ final class ContentViewPageObject {
         XCTAssertTrue(alert.exists)
     }
     
+    func changeSliderPosition() {
+        
+        XCUIApplication().sliders.element.adjust(toNormalizedSliderPosition: 0.33)
+    }
+    
     
     
 }

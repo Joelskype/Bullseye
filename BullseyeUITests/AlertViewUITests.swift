@@ -16,4 +16,11 @@ final class AlertViewUITests: XCTestCase {
         alertViewPage
             .checkAlertElements()
     }
+    
+    func testNewRoundButton() {
+        alertViewPage
+            .checkNewRoundButton()
+    }
+    
+    
 }
